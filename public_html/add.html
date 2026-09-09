@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CryptoParty :: Add Party</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #33ff33;
+    font-family: "Courier New", Courier, monospace;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    text-shadow: 0 0 6px rgba(51, 255, 51, 0.55);
+  }
+  pre {
+    font-size: clamp(6px, 1.6vw, 14px);
+    line-height: 1.15;
+    margin: 0;
+    white-space: pre;
+  }
+  .menu {
+    margin-top: 2.5em;
+    font-size: clamp(10px, 1.8vw, 15px);
+    line-height: 1.9;
+  }
+  .menu a {
+    color: #33ff33;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    background: #33ff33;
+    color: #000;
+    text-shadow: none;
+  }
+  .prompt {
+    margin-top: 2.5em;
+    font-size: clamp(10px, 1.8vw, 15px);
+  }
+  .cursor {
+    display: inline-block;
+    width: 0.6em;
+    background: #33ff33;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink {
+    50% { background: transparent; }
+  }
+  /* faint CRT scanlines */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px, transparent 2px,
+      rgba(0, 0, 0, 0.25) 3px
+    );
+  }
+</style>
+</head>
+<body>
+<pre>
+
+   ______                 __        ____             __
+  / ____/______  ______  / /_____  / __ \____ ______/ /___  __
+ / /   / ___/ / / / __ \/ __/ __ \/ /_/ / __ `/ ___/ __/ / / /
+/ /___/ /  / /_/ / /_/ / /_/ /_/ / ____/ /_/ / /  / /_/ /_/ /
+\____/_/   \__, / .___/\__/\____/_/    \__,_/_/   \__/\__, /
+          /____/_/                                   /____/
+
+ . . : : [ p a r t y   l i k e   i t &#x27; s   1 9 8 4 ] : : . .
+
+</pre>
+<div class="menu">
+<pre>
+
+email moritz at headstrong dot de and provide a link to get your event location added.
+</pre>
+</div>
+</body>
+</html>
