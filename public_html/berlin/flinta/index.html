@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* as you can see, CSS is my passion /s */
+    :root {
+      --characters-per-line: 75;
+      --characters-per-em: 2.14;
+      --text-width: calc(var(--characters-per-line) * 1rem / var(--characters-per-em));
+      --margin-width: calc((100vw - var(--text-width)) / 2);
+      --shadow-color: darkgray;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    article > * {
+      margin-left: var(--margin-width);
+    }
+    article > p {
+      max-width: var(--text-width); /* ~75 cpl */
+      text-wrap-style: pretty;
+      text-wrap-mode: wrap;
+      hyphens: auto;
+      text-align: justify;
+      text-justify: auto;
+    }
+    img,
+    picture,
+    video {
+      max-width: 100%;
+    }
+    figure.profile {
+      float: right;
+      max-width: calc(var(--margin-width) - (2 * 40px)); /* hardcoded 40px for margin */
+      min-width: calc(220px);
+      width: calc(0.6 * var(--text-width));
+      margin-top: 0px;
+      margin-left: 40px;
+    }
+    figure.profile > img {
+      box-shadow: 5px 5px 5px var(--shadow-color);
+    }
+    footer > * {
+      text-align: center;
+    }
+    @media screen and (width < 600px) {
+      article > * {
+        margin-left: 0;
+      }
+      figure.profile {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 0 0;
+      }
+      figure.profile > img {
+        box-shadow: none;
+      }
+      article > p {
+        text-align: unset;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #202020;
+        color: #eeeeee;
+      }
+      :root {
+        --shadow-color: #404040;
+      }
+      a {
+        color: #48c;
+      }
+      a:visited {
+        color: #8c60b0;
+      }
+    }
+  </style>
+  <title>FLINTA*-CryptoParty Berlin</title>
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <article>
+        <h1>FLINTA*-CryptoParty Berlin</h1>
+	<p><i>Please see English version <a href="#english">below</a>.</i></p>
+
+        <h2>Über CryptoParties</h2>
+        <p>
+	CryptoParties sind kostenlose Workshops zur digitalen Selbstverteidigung.
+	CryptoParties finden weltweit statt und sind dezentral organisiert.
+	Menschen kommen zusammen und lernen von einander,
+	wie sie ihre Privatsphäre in Zeiten von allgegenwärtiger kommerzieller Datensammelei und staatlicher Überwachung schützen können.
+	Dabei braucht Ihr keinerlei Vorkenntnisse und müsst Euch nirgends anmelden.
+	Alle Fragen sind bei einer CryptoParty willkommen!
+	Nach ein paar Stunden haben alle etwas gelernt und können mit neuen Ideen und einem Gefühl von Empowerment in ihren Alltag zurückkehren.
+        </p>
+
+	<h2>Nächste Termine</h2>
+	<ul>
+		<li>Di, 10.02.2026, 19-21 Uhr</li>
+		<li>Di, 14.04.2026, 19-21 Uhr</li>
+		<li>Di, 09.06.2026, 19-21 Uhr</li>
+		<li>Di, 11.08.2026, 19-21 Uhr</li>
+		<li>Di, 13.10.2026, 19-21 Uhr</li>
+		<li>Di, 08.12.2026, 19-21 Uhr</li>
+	</ul>
+	<p>
+	Wir beginnen mit einer kurzen Einführung, nach der wir uns in kleineren themenbezogenen Gruppen zusammenfinden.
+	</p>
+
+	<h2>Location</h2>
+	<p>
+	Unsere Veranstaltungen finden gerade offline statt.
+	</p>
+	<p>
+	Aquarium, <a href="https://www.openstreetmap.org/node/799000082">Skalitzer Str. 6</a>, 10999 Berlin-Kreuzberg 	
+	</p>
+
+	<h2>Code of Conduct</h2>
+	<p>
+	Seid großartig zueinander.
+	Bei CryptoParties kommen Menschen unterschiedlichster Hintergründe zusammen,
+	deshalb wünschen wir uns respektvollen Umgang miteinander.
+	</p>
+	<p>
+	Der Abend richtet sich an Frauen, Lesben, inter*, non-binary, trans* und agender Personen,
+	die bisher noch keine großen Erfahrungen mit Verschlüsselung oder Anonymisierung haben und wird von FLINTA*-Personen geleitet.
+	</p>
+	<p>
+	Aufnahmen jeglicher Art sind nicht erlaubt.
+	</p>
+	<p>
+	Weitere Informationen findet Ihr in unserem <a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/berlin/flinta/code-of-conduct-de">Code of Conduct</a>.
+	</p>
+
+	<h2>Warum CryptoParty</h2>
+	<p>
+	Privatsphäre ist der Raum, in dem Ideen entstehen.
+	Ein physischer wie digitaler Rückzugsort, in dem manches entdeckt und anderes ausprobiert werden kann.
+	Doch weder Regierungen noch Konzerne scheinen das grundlegende Menschenrecht auf informationelle Selbstbestimmung respektieren zu wollen.
+	Deswegen nehmen wir den Schutz unserer Privatsphäre selbst in die Hand. 
+	</p>
+
+	<h2>Mögliche Themen</h2>
+	<ul>
+		<li>Kommunikation verschlüsseln
+		<ul>
+			<li>E-Mail (<a href="https://de.wikipedia.org/wiki/Pretty_Good_Privacy">PGP</a>)</li>
+			<li>Chat (<a href="https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol">XMPP</a> und <a href="https://de.wikipedia.org/wiki/Off-the-Record_Messaging">OTR</a>)</li>
+			<li>Mobile Messenger (<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Signal</a> und <a href="https://play.google.com/store/apps/details?id=com.wire">Wire</a>)</li>
+		</ul></li>
+		<li>Surfen
+		<ul>
+			<li><a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/learn/tools#firefoxchrome">Browser Add-Ons</a></li>
+			<li>Anonymes Surfen (<a href="https://torproject.org/">Tor</a>)</li>
+		</ul></li>
+		<li>Daten verschlüsseln
+		<ul>
+			<li><a href="https://veracrypt.codeplex.com/">VeraCrypt</a> (vormals TrueCrypt)</li>
+			<li><a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">LUKS</a> unter Linux</li>
+		</ul></li>
+		<li>Smartphone-Sicherheit</li>
+		<li>Sichere Passsätze und Passwort-Manager</li>
+		<li>Freie Betriebssysteme
+		<ul>
+			<li>Installation von Linux</li>
+			<li><a href="https://tails.boum.org/index.de.html">Tails</a> (sicheres und anonymes Betriebssystem, bei Interesse bitte USB-Stick mitbringen)</li>
+		</ul></li>
+	</ul>
+	<p>
+	Einen Blick wert:
+	</p>
+	<ul>
+		<li><a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/learn/tools">Eine Liste von Tools, die wir empfehlen.</a></li>
+		<li><a href="https://datadetoxkit.org/de/home">Data Detox Kit</a></li>
+		<li><a href="https://securityinabox.org/">Security in a Box</a></li>
+		<li><a href="https://privacytools.it-sec.rocks/">privacytools.io</a></li>
+	</ul>
+
+	<h2>Sprache</h2>
+	<p>
+	Alle Themen werden auf Deutsch und Englisch angeboten.
+	</p>
+
+	<h2>Kontakt</h2>
+	<p>
+	Schreib uns gern an <b>flinta-cryptoparty [at] systemli.org</b>.
+	</p>
+
+	<hr>
+
+        <h2 id="english">About CryptoParties</h2>
+        <p>
+	CryptoParty is a free workshop format for digital self-defense.
+	Being a decentralized movement events happen all over the world.
+	People come together and learn from one another how to protect their privacy online
+	in times of pervasive commercial tracking and state surveillance.
+	Absolutely no prior knowledge is required, you don't have to register anywhere and all questions are beautiful!
+	After a few hours everybody has learned something and returns to their everyday life with some new ideas and a sense of empowerment. 
+        </p>
+
+	<h2>Next Dates</h2>
+	<ul>
+		<li>Tuesday, February 10th 2026, 7-9 pm</li>
+		<li>Tuesday, April 14th 2026, 7-9 pm</li>
+		<li>Tuesday, June 9th 2026, 7-9 pm</li>
+		<li>Tuesday, August 11th 2026, 7-9 pm</li>
+		<li>Tuesday, October 13th 2026, 7-9 pm</li>
+		<li>Tuesday, December 8th 2026, 7-9 pm</li>
+	</ul>
+	<p>
+	We will have a short introduction and then continue with hands-on workshops around specific topics in smaller groups.
+	</p>
+
+	<h2>Location</h2>
+	<p>
+	Our events currently take place offline exclusively.
+	</p>
+	<p>
+	Aquarium, <a href="https://www.openstreetmap.org/node/799000082">Skalitzer Str. 6</a>, 10999 Berlin-Kreuzberg 	
+	</p>
+
+	<h2>Code of Conduct</h2>
+	<p>
+	Be excellent to each other. We all come from different backgrounds, so respect is key. 
+	</p>
+	<p>
+	he workshop is for female, lesbian, inter*, non-binary, trans* and agender people (FLINTA*) who do not have prior experience with encryption or anonymization and is held by FLINTA*.
+	</p>
+	<p>
+	Recording of any kind will not be allowed. 
+	</p>
+	<p>
+	For further details, please refer to our <a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/berlin/flinta/code-of-conduct-en">Code of Conduct</a>.
+	</p>
+
+	<h2>Why CryptoParty</h2>
+	<p>
+	 Privacy is a space where ideas can thrive.
+	A retreat, both physical and digital, where you can explore and experiment whenever you want to.
+	Governments and companies seem increasingly unwilling to respect this fundamental human right of informational self-determination,
+	so we have to take matters into our own hands. 
+	</p>
+
+	<h2>Possible Topics</h2>
+	<p>
+	Learning is always an individual process,
+	so we will have separate tables for each topic.
+	Just pick the one you're most interested in. 
+	<ul>
+		<li>Communication Encryption
+		<ul>
+			<li>Email (<a href="https://de.wikipedia.org/wiki/Pretty_Good_Privacy">PGP</a>)</li>
+			<li>Chat (<a href="https://de.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol">XMPP</a> and <a href="https://de.wikipedia.org/wiki/Off-the-Record_Messaging">OTR</a>)</li>
+			<li>Mobile Messenger (<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Signal</a> and <a href="https://play.google.com/store/apps/details?id=com.wire">Wire</a>)</li>
+		</ul></li>
+		<li>Browsing
+		<ul>
+			<li>privacy enhancing <a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/learn/tools#firefoxchrome">Browser Add-Ons</a></li>
+			<li>anonymous browsing (<a href="https://torproject.org/">Tor</a>)</li>
+		</ul></li>
+		<li>Data Encryption
+		<ul>
+			<li><a href="https://veracrypt.codeplex.com/">VeraCrypt</a> (previously TrueCrypt)</li>
+			<li><a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">LUKS</a> on Linux</li>
+		</ul></li>
+		<li>Mobile security</li>
+		<li>Password security and managers</li>
+		<li>Free operating systems
+		<ul>
+			<li>Linux installation</li>
+			<li><a href="https://tails.boum.org/index.de.html">Tails</a> (secure and anonymous operating system… please bring a thumb drive if interested)</li>
+		</ul></li>
+	</ul>
+	<p>
+	Also worth a look:
+	</p>
+	<ul>
+		<li><a href="https://web.archive.org/web/20260509195858/https://cryptoparty.in/learn/tools">list of tools we recommend</a></li>
+		<li><a href="https://datadetoxkit.org/de/home">Data Detox Kit</a></li>
+		<li><a href="https://securityinabox.org/">Security in a Box</a></li>
+		<li><a href="https://privacytools.it-sec.rocks/">privacytools.io</a></li>
+	</ul>
+
+	<h2>Language</h2>
+	<p>
+	 All topics can be offered in German and English. 
+	</p>
+
+	<h2>Contact</h2>
+	<p>
+	Please send questions to <b>flinta-cryptoparty [at] systemli.org</b>.
+	</p>
+
+    </article>
+
+  </main>
+  <footer>
+    <!--p>© Copyright 2026 CC0?</p-->
+  </footer>
+</body>
+</html>
